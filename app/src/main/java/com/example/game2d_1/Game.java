@@ -87,7 +87,7 @@ if (gameloop.getState().equals(Thread.State.TERMINATED)){
             {
                 p.setColor(Color.RED);
                 p.setTextSize(150);
-                canvas.drawText("GameOver",(float) snake.SnakeBody.get(0).PositionX, (float) snake.SnakeBody.get(0).PositionY,p);
+                canvas.drawText("GameOver",800, 500,p);
 
             }
         }
