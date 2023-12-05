@@ -28,7 +28,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
     int score=0;
     private Obstacles obstacles;
 
-    public Game(Context context) {
+    public Game(Context context,int level) {
         super(context);
         //int color= ContextCompat.getColor(context,R.color.Magenta);
 
@@ -42,7 +42,7 @@ public class Game extends SurfaceView implements SurfaceHolder.Callback {
         joystick =new Joystick(275,650,150,80);
         snake=new Snake(0,0,20);
 
-        obstacles=new Obstacles();
+        obstacles=new Obstacles(level);
         GenererRepas();
 }
 
